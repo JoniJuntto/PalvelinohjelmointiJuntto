@@ -33,7 +33,7 @@ public class userRepositoryTest {
     
     @Test
     public void createNewStudent() {
-    	User user = new User("Mikko", "Mikonsalasana123", "mikko.mikko@mikko.fi");
+    	User user = new User("Mikko", "Mikonsalasana123", "Testaaja");
     	repository.save(user);
     	assertThat(user.getId()).isNotNull();
     }    
